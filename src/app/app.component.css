@@ -1,0 +1,19 @@
+.header1 {
+  color: red;
+  text-align: center;
+}
+
+.input1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.li-color{
+  color: green;
+}

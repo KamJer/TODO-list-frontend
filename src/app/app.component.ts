@@ -1,3 +1,4 @@
+import { TaskService } from './services/task.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-kurs';
+
+  constructor(private taskService: TaskService) {
+
+  }
+
+  save(){
+    this.taskService.postTasksInDB();
+  }
 }

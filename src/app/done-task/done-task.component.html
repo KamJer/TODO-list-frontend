@@ -1,0 +1,6 @@
+Wykonane zadania: {{taskDone.length}}
+<ul class="li-color">
+  <li appDate [date]="done.end" *ngFor="let done of taskDone">
+    {{done.name}}
+  </li>
+</ul>

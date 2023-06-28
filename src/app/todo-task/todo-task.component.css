@@ -1,0 +1,9 @@
+li {
+  background-color: rgb(233, 233, 233);
+  margin: 5px;
+}
+
+.li-odd {
+  background-color: darkgray;
+  margin: 5px;
+}

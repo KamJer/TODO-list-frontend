@@ -1,0 +1,10 @@
+<div *ngIf="taskList.length > 0 else noTask">
+  <ul>
+    <li appDate [date]="task.created" *ngFor="let task of taskList; let odd = odd" [ngClass]="{'li-odd' : odd===true}">
+      {{task.name}}
+      <button type="button" class="btn btn-success" (click)="done(task)">Wykonane</button>
+      <button type="button" class="btn btn-danger" (click)="delete(task)">Usuń</button>
+    </li>
+  </ul>
+</div>
+<ng-template #noTask>Nie masz już zadań</ng-template>
